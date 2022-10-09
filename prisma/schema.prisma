@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// TODO: finish these models
+
+model User {
+  // Discord user id
+  id   String @id
+  //
+  bots Bot[]
+}
+
+model Bot {
+  // Discord bot id
+  id     String
+  // Owner of the bot
+  userId String
+  //
+  user   User   @relation(fields: [userId], references: [id])
+
+  @@id([id, userId])
+}
