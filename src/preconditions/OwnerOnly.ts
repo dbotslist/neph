@@ -4,7 +4,7 @@ import type { Snowflake } from 'discord-api-types/v9';
 import type { ChatInputCommandInteraction, ContextMenuCommandInteraction, Message } from 'discord.js';
 
 export class UserPrecondition extends AllFlowsPrecondition {
-	#message = 'This command can only be used by the bot owner.';
+	#message = 'Restricted';
 
 	public override chatInputRun(interaction: ChatInputCommandInteraction) {
 		return this.doOwnerCheck(interaction.user.id);
