@@ -7,7 +7,7 @@ import { join } from 'node:path';
 setup(join(rootFolder, 'src', '.env'));
 
 export const CLIENT_OPTIONS: ClientOptions = {
-	disableMentionPrefix: true,
+	disableMentionPrefix: false,
 	intents: [IntentsBitField.Flags.GuildMessages, IntentsBitField.Flags.Guilds],
 	makeCache: Options.cacheEverything(),
 	loadDefaultErrorListeners: process.env.NODE_ENV !== 'production',
