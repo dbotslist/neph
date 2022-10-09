@@ -14,5 +14,6 @@ export const CLIENT_OPTIONS: ClientOptions = {
 	rest: { offset: 0 },
 	logger: { level: process.env.NODE_ENV === 'production' ? LogLevel.Info : LogLevel.Debug },
 	partials: [Partials.Channel, Partials.Message],
+	loadMessageCommandListeners: true,
 	allowedMentions: { users: [], roles: [] }
 };
