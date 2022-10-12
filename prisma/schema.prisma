@@ -11,18 +11,45 @@ datasource db {
 
 model User {
   // Discord user id
-  id   String @id
+  id        String   @id
+  // Something about the user
+  bio       String?
   //
-  bots Bot[]
+  bots      Bot[]
+  //
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("users")
 }
 
+// TODO: add links to the bot's website, github, etc.
 model Bot {
   // Discord bot id
-  id     String
-  // Owner of the bot
-  userId String
+  id               String    @id
+  // Avatar of the bot
+  avatar           String?
+  // Name of the bot
+  name             String
+  // Bot status
+  status           BotStatus @default(PENDING)
+  // Description of the bot
+  description      String?
+  // short description of the bot
+  shortDescription String?   @map("short_description")
+  // The bot's prefix
+  prefix           String?
   //
-  user   User   @relation(fields: [userId], references: [id])
+  owners           User[]
+  //
+  createdAt        DateTime  @default(now()) @map("created_at")
+  updatedAt        DateTime  @updatedAt @map("updated_at")
 
-  @@id([id, userId])
+  @@map("bots")
+}
+
+enum BotStatus {
+  APPROVED
+  PENDING
+  DENIED
 }

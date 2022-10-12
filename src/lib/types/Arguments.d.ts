@@ -1,4 +1,4 @@
-import type { PrismaClient } from '@prisma/client';
+import type { ModelMangar } from '#lib/database/ModelManager';
 import type { ArrayString } from '@skyra/env-utilities';
 
 declare module 'discord.js' {
@@ -9,7 +9,7 @@ declare module 'discord.js' {
 
 declare module '@sapphire/pieces' {
 	interface Container {
-		prisma: PrismaClient;
+		prisma: ModelMangar;
 	}
 }
 
