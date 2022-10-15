@@ -43,6 +43,7 @@ model Bot {
   //
   owners           User[]
   reviews          Review[]
+  tags             Tag[]
   //
   createdAt        DateTime  @default(now()) @map("created_at")
   updatedAt        DateTime  @updatedAt @map("updated_at")
@@ -71,6 +72,15 @@ model Review {
 
   @@unique([botId, userId])
   @@map("reviews")
+}
+
+model Tag {
+  //  Name of the tag
+  name String @id
+  // Bots that have this tag
+  bots Bot[]
+
+  @@map("tags")
 }
 
 enum BotStatus {

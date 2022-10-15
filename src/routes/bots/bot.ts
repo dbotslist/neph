@@ -22,13 +22,13 @@ export class UserRoute extends Route {
 
 		if (isNullish(bot)) {
 			return response.notFound({
-				identifier: ApiResponseIdentifiers.BotNotFound
+				identifier: ApiResponseIdentifiers.NOTFOUND
 			});
 		}
 
-		response.json({
+		return response.ok({
 			data: bot,
-			identifier: ApiResponseIdentifiers.BotFound,
+			identifier: ApiResponseIdentifiers.SUCCESS,
 			status: HttpCodes.OK
 		});
 	}
@@ -42,7 +42,7 @@ export class UserRoute extends Route {
 			where: { id }
 		});
 
-		return response.json({
+		return response.ok({
 			data: bot,
 			identifier: ApiResponseIdentifiers.BotDeleted,
 			status: HttpCodes.OK
@@ -53,7 +53,7 @@ export class UserRoute extends Route {
 	@ratelimit(Time.Minute * 7, 1, true)
 	public async [methods.POST](request: ApiRequest, response: ApiResponse) {
 		const { id } = request.params;
-		const { description, prefix, shortDescription } = cast<Bot>(request.body);
+		const { description, prefix, shortDescription, tags } = cast<Bot & { tags: string[] }>(request.body);
 
 		const { avatar, username: name } = await this.container.client.users.fetch(id, { cache: true });
 
@@ -67,6 +67,9 @@ export class UserRoute extends Route {
 						where: { id: request.auth!.id },
 						create: { id: request.auth!.id }
 					}
+				},
+				tags: {
+					connect: tags.map((tag) => ({ name: tag }))
 				},
 				prefix,
 				shortDescription,
