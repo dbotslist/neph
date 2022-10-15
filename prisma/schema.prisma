@@ -16,6 +16,7 @@ model User {
   bio       String?
   //
   bots      Bot[]
+  reviews   Review[]
   //
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
@@ -41,11 +42,35 @@ model Bot {
   prefix           String?
   //
   owners           User[]
+  reviews          Review[]
   //
   createdAt        DateTime  @default(now()) @map("created_at")
   updatedAt        DateTime  @updatedAt @map("updated_at")
 
   @@map("bots")
+}
+
+model Review {
+  // Review id
+  id        Int      @id @default(autoincrement())
+  // The bot id
+  botId     String   @map("bot_id")
+  // The user id
+  userId    String   @map("user_id")
+  // The review's content
+  content   String   @db.Char(2000)
+  // The review's rating
+  rating    Int      @default(1)
+  // The bot that was reviewed
+  bot       Bot      @relation(fields: [botId], references: [id])
+  // The user that reviewed the bot
+  user      User     @relation(fields: [userId], references: [id])
+  //
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@unique([botId, userId])
+  @@map("reviews")
 }
 
 enum BotStatus {

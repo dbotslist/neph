@@ -1,5 +1,5 @@
 import type { ModelMangar } from '#lib/database/ModelManager';
-import type { ArrayString } from '@skyra/env-utilities';
+import type { ArrayString, NumberString } from '@skyra/env-utilities';
 
 declare module 'discord.js' {
 	interface Client {
@@ -21,10 +21,25 @@ declare module '@sapphire/framework' {
 
 declare module '@skyra/env-utilities' {
 	interface Env {
+		// CLIENT
 		CLIENT_OWNERS: ArrayString;
+		CLIENT_ID: string;
 
+		// API
+		API_PORT: NumberString;
+		API_PREFIX: string;
+		API_ORIGIN: string;
+
+		// OAUTH
+		OAUTH_COOKIE: string;
+		OAUTH_REDIRECT_URI: string;
+		OAUTH_DOMAIN_OVERWRITE: string;
+		OAUTH_SCOPE: ArrayString;
+
+		// SECRETS
 		DATABASE_URL: string;
 		DISCORD_TOKEN: string;
+		OAUTH_SECRET: string;
 	}
 }
 

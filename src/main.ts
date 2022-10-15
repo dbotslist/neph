@@ -1,3 +1,5 @@
+import '#lib/setup';
+
 import { NephClient } from '#lib/Neph';
 import { container } from '@sapphire/framework';
 

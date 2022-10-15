@@ -1,6 +1,7 @@
 import '#root/config';
 
-import '@kaname-png/plugin-subcommands-advanced/register';
+// import '@kaname-png/plugin-subcommands-advanced/register';
+import '@sapphire/plugin-api/register';
 import '@sapphire/plugin-logger/register';
 
 import * as colorette from 'colorette';
