@@ -1,6 +1,8 @@
 import { NephClient } from '#lib/Neph';
 import { container } from '@sapphire/framework';
 
+import '#lib/setup';
+
 const client = new NephClient();
 
 const main = async () => {
