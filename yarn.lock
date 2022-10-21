@@ -408,35 +408,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/client@npm:^4.4.0":
-  version: 4.5.0
-  resolution: "@prisma/client@npm:4.5.0"
-  dependencies:
-    "@prisma/engines-version": 4.5.0-43.0362da9eebca54d94c8ef5edd3b2e90af99ba452
-  peerDependencies:
-    prisma: "*"
-  peerDependenciesMeta:
-    prisma:
-      optional: true
-  checksum: 1e6b76c104f17e6fc78c537d17879a17dcde8443cd6d084530068453c4f2620050c273f5683d7cdb5012a0d5b4854907fe993fcf5752fb11f2bcca7221d34e59
-  languageName: node
-  linkType: hard
-
-"@prisma/engines-version@npm:4.5.0-43.0362da9eebca54d94c8ef5edd3b2e90af99ba452":
-  version: 4.5.0-43.0362da9eebca54d94c8ef5edd3b2e90af99ba452
-  resolution: "@prisma/engines-version@npm:4.5.0-43.0362da9eebca54d94c8ef5edd3b2e90af99ba452"
-  checksum: 619626ff5dc16a292065a5318f76653f589bf170a769edbabb07d62b4a589ab0eba287a00faf3e31eaf3280c99662e210376a61a68f91b7690a955fd43f346eb
-  languageName: node
-  linkType: hard
-
-"@prisma/engines@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@prisma/engines@npm:4.5.0"
-  checksum: d34ba4ceee67809b4a6d756763b118b3fbf273ab35378e568495248c7c62633c4cccca1e6b94411d5312a272f268f3dec5e8ae0a3e4177ad5f593f38daca7c58
-  languageName: node
-  linkType: hard
-
-"@sapphire/async-queue@npm:^1.3.2":
+"@sapphire/async-queue@npm:^1.5.0":
   version: 1.5.0
   resolution: "@sapphire/async-queue@npm:1.5.0"
   checksum: 983dbd1fd1b1798496e5edb6a0db7e4d90015160e1028f20475eab0a92625513f1e8d938bc0305811a9cec461c94e01b1e4191615ff03ba49356f568f3255250
@@ -682,7 +654,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:^8":
+"@types/eslint@npm:^8.4.7":
   version: 8.4.7
   resolution: "@types/eslint@npm:8.4.7"
   dependencies:
@@ -730,7 +702,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.8.3":
+"@types/node@npm:*, @types/node@npm:^18.11.3":
   version: 18.11.3
   resolution: "@types/node@npm:18.11.3"
   checksum: 3a2a9142d891a90a195c296149bf64a69cc0abcc42f543be911ab22b2e0ead85ff077f90af92f0f13f6e3e5e72501469200fd753dfd1101825d4646a89d3ee47
@@ -758,7 +730,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:^2":
+"@types/prettier@npm:^2.7.1":
   version: 2.7.1
   resolution: "@types/prettier@npm:2.7.1"
   checksum: 5e3f58e229d6c73b5f5cae2e8f96c1c4a5b5805f83459e17a045ba8e96152b1d38e86b63e3172fb159dac923388699660862b75b2d37e54220805f0e691e26f1
@@ -781,7 +753,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.33.1, @typescript-eslint/eslint-plugin@npm:^5.40.0":
+"@typescript-eslint/eslint-plugin@npm:^5.33.1, @typescript-eslint/eslint-plugin@npm:^5.40.1":
   version: 5.40.1
   resolution: "@typescript-eslint/eslint-plugin@npm:5.40.1"
   dependencies:
@@ -803,7 +775,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.33.1, @typescript-eslint/parser@npm:^5.40.0":
+"@typescript-eslint/parser@npm:^5.33.1, @typescript-eslint/parser@npm:^5.40.1":
   version: 5.40.1
   resolution: "@typescript-eslint/parser@npm:5.40.1"
   dependencies:
@@ -1562,20 +1534,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord.js@npm:^13.10.2":
-  version: 13.10.2
-  resolution: "discord.js@npm:13.10.2"
+"discord.js@npm:^13.12.0":
+  version: 13.12.0
+  resolution: "discord.js@npm:13.12.0"
   dependencies:
     "@discordjs/builders": ^0.16.0
     "@discordjs/collection": ^0.7.0
-    "@sapphire/async-queue": ^1.3.2
+    "@sapphire/async-queue": ^1.5.0
     "@types/node-fetch": ^2.6.2
     "@types/ws": ^8.5.3
-    discord-api-types: ^0.33.3
+    discord-api-types: ^0.33.5
     form-data: ^4.0.0
     node-fetch: ^2.6.7
-    ws: ^8.8.1
-  checksum: b8033cba91309f454c6018237fd7221913c1b78aea41b24adad8ceac5ee67f14c6da62fa0d747f20bf40f333f34898f8534ec3d1958e2c15e7fe9cf5c5535a77
+    ws: ^8.9.0
+  checksum: e7121efac94cf8dba04999f1050cc369e03651afe7c2d440edab415cfac5b6072cca908e7c1310f0027805deaa955922c4bc0d531ff48d84202c643a0bd5141e
   languageName: node
   linkType: hard
 
@@ -3086,7 +3058,6 @@ __metadata:
     "@commitlint/cli": ^17.1.2
     "@commitlint/config-conventional": ^17.1.0
     "@kaname-png/plugin-subcommands-advanced": ^2.1.3
-    "@prisma/client": ^4.4.0
     "@sapphire/decorators": ^5.0.0
     "@sapphire/discord.js-utilities": ^5.1.1
     "@sapphire/eslint-config": ^4.3.8
@@ -3098,14 +3069,14 @@ __metadata:
     "@sapphire/type": ^2.2.4
     "@sapphire/utilities": ^3.11.0
     "@skyra/env-utilities": ^1.1.0
-    "@types/eslint": ^8
-    "@types/node": ^18.8.3
-    "@types/prettier": ^2
-    "@typescript-eslint/eslint-plugin": ^5.40.0
-    "@typescript-eslint/parser": ^5.40.0
+    "@types/eslint": ^8.4.7
+    "@types/node": ^18.11.3
+    "@types/prettier": ^2.7.1
+    "@typescript-eslint/eslint-plugin": ^5.40.1
+    "@typescript-eslint/parser": ^5.40.1
     colorette: ^2.0.19
-    discord-api-types: 0.37.12
-    discord.js: ^13.10.2
+    discord-api-types: 0.37.14
+    discord.js: ^13.12.0
     eslint: ^8.25.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-prettier: ^4.2.1
@@ -3113,9 +3084,8 @@ __metadata:
     lint-staged: ^13.0.3
     prettier: ^2.7.1
     pretty-quick: ^3.1.3
-    prisma: ^4.4.0
     tslib: ^2.4.0
-    typescript: ^4.9.0-dev.20221016
+    typescript: ^4.8.4
   languageName: unknown
   linkType: soft
 
@@ -3474,18 +3444,6 @@ __metadata:
   bin:
     pretty-quick: bin/pretty-quick.js
   checksum: 28bdc32571e6308e049497f58a9245f272275973782b6ed7fbcf98937101cc605a81b3ab48629dba4687b7e86c87a3733febacdc0746ca4da5d1c80a0b88cf45
-  languageName: node
-  linkType: hard
-
-"prisma@npm:^4.4.0":
-  version: 4.5.0
-  resolution: "prisma@npm:4.5.0"
-  dependencies:
-    "@prisma/engines": 4.5.0
-  bin:
-    prisma: build/index.js
-    prisma2: build/index.js
-  checksum: 83a6d28475a31e8d69b355f949c0484b6d64324c45c452c57bf9ed50f85129b8df22fecb671c00a28f0cb80360a3f691888c463548949e94078f7f9be4bd0c79
   languageName: node
   linkType: hard
 
@@ -4202,7 +4160,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.3, typescript@npm:^4.6.4, typescript@npm:^4.7.4":
+"typescript@npm:^4.6.3, typescript@npm:^4.6.4, typescript@npm:^4.7.4, typescript@npm:^4.8.4":
   version: 4.8.4
   resolution: "typescript@npm:4.8.4"
   bin:
@@ -4212,33 +4170,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.9.0-dev.20221016":
-  version: 4.9.0-dev.20221021
-  resolution: "typescript@npm:4.9.0-dev.20221021"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 2d9b71559341687f17f960dbb3f60cf1fd5633c66ade8a5bb8081c6ae975ee1be74a993d4e39625795dfc9ff47b8abb693fe57efc12694a7e6ef25d51ae4436b
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@^4.6.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.7.4#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.6.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.7.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.8.4#~builtin<compat/typescript>":
   version: 4.8.4
   resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 301459fc3eb3b1a38fe91bf96d98eb55da88a9cb17b4ef80b4d105d620f4d547ba776cc27b44cc2ef58b66eda23fe0a74142feb5e79a6fb99f54fc018a696afa
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@^4.9.0-dev.20221016#~builtin<compat/typescript>":
-  version: 4.9.0-dev.20221021
-  resolution: "typescript@patch:typescript@npm%3A4.9.0-dev.20221021#~builtin<compat/typescript>::version=4.9.0-dev.20221021&hash=701156"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 792c2946df0e1583b2b2b886ad685e677c8011cf888148d788bbcae3eae883f3c0cc2e9c033bbc6b038d0ae63fdc4046f961f3efe2d032fdecdcdfedd2fab5ef
   languageName: node
   linkType: hard
 
@@ -4373,7 +4311,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ws@npm:^8.8.1":
+"ws@npm:^8.9.0":
   version: 8.9.0
   resolution: "ws@npm:8.9.0"
   peerDependencies:
