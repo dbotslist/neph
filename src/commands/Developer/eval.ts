@@ -1,8 +1,8 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Args, Command } from '@sapphire/framework';
 import Type from '@sapphire/type';
-import { isThenable } from '@sapphire/utilities';
-import { codeBlock, type Message } from 'discord.js';
+import { codeBlock, isThenable } from '@sapphire/utilities';
+import type { Message } from 'discord.js';
 import { inspect } from 'node:util';
 
 @ApplyOptions<Command.Options>({

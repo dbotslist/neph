@@ -1,16 +1,16 @@
 import { AllFlowsPrecondition } from '@sapphire/framework';
 import { envParseArray } from '@skyra/env-utilities';
 import type { Snowflake } from 'discord-api-types/v9';
-import type { ChatInputCommandInteraction, ContextMenuCommandInteraction, Message } from 'discord.js';
+import type { CommandInteraction, ContextMenuInteraction, Message } from 'discord.js';
 
 export class UserPrecondition extends AllFlowsPrecondition {
 	#message = 'Restricted';
 
-	public override chatInputRun(interaction: ChatInputCommandInteraction) {
+	public override chatInputRun(interaction: CommandInteraction) {
 		return this.doOwnerCheck(interaction.user.id);
 	}
 
-	public override contextMenuRun(interaction: ContextMenuCommandInteraction) {
+	public override contextMenuRun(interaction: ContextMenuInteraction) {
 		return this.doOwnerCheck(interaction.user.id);
 	}
 
