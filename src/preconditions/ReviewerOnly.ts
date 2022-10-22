@@ -19,6 +19,6 @@ export class UserPrecondition extends AllFlowsPrecondition {
 	}
 
 	private doCheck(userId: Snowflake) {
-		return envParseArray('CLIENT_OWNERS').includes(userId) ? this.ok() : this.error({ message: this.#message });
+		return envParseArray('BOT_REVIEWERS').includes(userId) ? this.ok() : this.error({ message: this.#message });
 	}
 }
