@@ -3,7 +3,8 @@ import { ApplyOptions } from '@sapphire/decorators';
 import type { ApplicationCommandRegistry } from '@sapphire/framework';
 
 @ApplyOptions<Subcommand.Options>({
-	name: 'bot'
+	name: 'bot',
+	preconditions: ['ReviewerOnly']
 })
 export class ParentCommand extends Subcommand {
 	public override registerApplicationCommands(registry: ApplicationCommandRegistry) {
