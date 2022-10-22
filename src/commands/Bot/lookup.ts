@@ -14,7 +14,7 @@ import { MessageActionRow, MessageButton, MessageEmbed } from 'discord.js';
 		)
 )
 export class BotCommand extends Command {
-	public override async chatInputRun(interaction: Command.ChatInputInteraction) {
+	public override chatInputRun(interaction: Command.ChatInputInteraction) {
 		const id = interaction.options.getString('id', true);
 
 		const bot = fakeQueue.find((b) => b.id === id);
@@ -41,6 +41,6 @@ export class BotCommand extends Command {
 					.setStyle('SECONDARY')
 			);
 
-		interaction.reply({ embeds: [embed], components: [component] });
+		return interaction.reply({ embeds: [embed], components: [component] });
 	}
 }
