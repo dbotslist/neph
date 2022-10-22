@@ -1,18 +1,10 @@
-import { defaultColor } from '#utils/constants';
+import { defaultColor, fakeQueue } from '#utils/constants';
 import { Command, RegisterSubCommand } from '@kaname-png/plugin-subcommands-advanced';
 import { PaginatedMessage } from '@sapphire/discord.js-utilities';
 import { MessageEmbed } from 'discord.js';
 
 @RegisterSubCommand('bot', (builder) => builder.setName('queue').setDescription('-> bots queue'))
 export class BotCommand extends Command {
-	public readonly queue = [
-		{
-			name: 'Neph',
-			avatar: 'https://media.discordapp.net/attachments/1029728202358259762/1033058794340618310/4892e36efdf899249d5740c75cbca35b.png?width=455&height=455',
-			id: '535345364565789657'
-		}
-	];
-
 	public override async chatInputRun(interaction: Command.ChatInputInteraction) {
 		const { screen } = this.buildEmbed();
 
@@ -25,12 +17,12 @@ export class BotCommand extends Command {
 			template: new MessageEmbed().setColor(defaultColor)
 		});
 
-		for (const bot of this.queue) {
+		for (const bot of fakeQueue) {
 			screen.addPageEmbed((embed) =>
 				embed //
 					.setTitle(bot.name)
 					.setThumbnail(bot.avatar)
-					.setDescription(`>>> Run \`/bot lookup ${bot.id}\` to approve, denial or nothing`)
+					.setDescription(`>>> Run \`/bot lookup id:${bot.id}\` to approve, denial or nothing`)
 			);
 		}
 
