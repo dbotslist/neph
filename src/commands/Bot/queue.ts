@@ -30,7 +30,7 @@ export class BotCommand extends Command {
 				embed //
 					.setTitle(bot.name)
 					.setThumbnail(bot.avatar)
-					.setDescription(`>>> Run \`/bot lookup ${bot.id}\` to approve, denial or `)
+					.setDescription(`>>> Run \`/bot lookup ${bot.id}\` to approve, denial or nothing`)
 			);
 		}
 
