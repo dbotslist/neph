@@ -368,13 +368,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kaname-png/plugin-subcommands-advanced@npm:^2.1.4":
-  version: 2.1.4
-  resolution: "@kaname-png/plugin-subcommands-advanced@npm:2.1.4"
+"@kaname-png/plugin-subcommands-advanced@npm:^2.1.5":
+  version: 2.2.0
+  resolution: "@kaname-png/plugin-subcommands-advanced@npm:2.2.0"
   dependencies:
-    "@sapphire/decorators": ^5.0.0
+    "@sapphire/decorators": pr-434
     tslib: ^2.4.0
-  checksum: c491cc1a3aae6cae8ade7d4f533e8c15933e26bbe6811b34af31a418853704ff3f17abc9c980f919f1196a5f246dfc58a1b63889d26ee04ed54bfee471d2c1fe
+  checksum: 201fc1da3ff286976822a51ec0d488ea3103b3aec8bff6c221b1836c999e4f36eefbdc1bcd53c5286b53e8effdd799a4786aa21a0cb07062087037aa0098c267
   languageName: node
   linkType: hard
 
@@ -438,6 +438,15 @@ __metadata:
   dependencies:
     tslib: ^2.4.0
   checksum: 18f33669e287df45e7805862c16a6e9c1813c7836985270c0c5867db6e9f724879a228fd19d82fd567f4108d671b9fa862d02ef0010e7f21bfcbc87af05d9ff4
+  languageName: node
+  linkType: hard
+
+"@sapphire/decorators@npm:pr-434":
+  version: 5.1.0-pr-434.9fcf7df.0
+  resolution: "@sapphire/decorators@npm:5.1.0-pr-434.9fcf7df.0"
+  dependencies:
+    tslib: ^2.4.0
+  checksum: adab1dbb2867639932119e9fec69e6b98831e376006f96e5969ed67050423142e9ccebc3d8137481174a4d2622ddac12443e78a64a112ba2b915596a6db566bb
   languageName: node
   linkType: hard
 
@@ -3328,7 +3337,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.3.0
     "@commitlint/config-conventional": ^17.3.0
-    "@kaname-png/plugin-subcommands-advanced": ^2.1.4
+    "@kaname-png/plugin-subcommands-advanced": ^2.1.5
     "@sapphire/decorators": ^5.0.0
     "@sapphire/discord.js-utilities": ^5.1.2
     "@sapphire/eslint-config": ^4.3.8
