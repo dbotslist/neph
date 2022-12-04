@@ -22,7 +22,7 @@
 		"update": "yarn upgrade-interactive"
 	},
 	"dependencies": {
-		"@kaname-png/plugin-subcommands-advanced": "^2.1.4",
+		"@kaname-png/plugin-subcommands-advanced": "^2.1.5",
 		"@sapphire/decorators": "^5.0.0",
 		"@sapphire/discord.js-utilities": "^5.1.2",
 		"@sapphire/framework": "^3.1.4",
