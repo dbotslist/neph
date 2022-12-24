@@ -48,7 +48,5 @@ jobs:
           cache: pnpm
       - name: Install Dependencies
         run: pnpm install
-      - name: Generate Prisma
-        run: pnpm prisma generate
       - name: Build Code
         run: pnpm build
