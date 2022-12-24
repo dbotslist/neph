@@ -6,7 +6,7 @@
 	"author": "@somelist",
 	"license": "UNLICENSED",
 	"type": "module",
-	"packageManager": "yarn@3.3.1",
+	"packageManager": "pnpm@7.15.0",
 	"imports": {
 		"#lib/*": "./dist/lib/*.js",
 		"#root/*": "./dist/*.js",
@@ -14,18 +14,20 @@
 	},
 	"scripts": {
 		"build": "tsc -b src",
-		"dev": "yarn build && yarn start",
+		"dev": "pnpm build && pnpm start",
 		"postinstall": "husky install .github/husky",
 		"lint": "eslint --fix --ext ts src",
 		"start": "node --enable-source-maps dist/main.js",
 		"format": "prettier --write --loglevel=warn \"src/**/*.{js,ts,mts,json}\"",
-		"update": "yarn upgrade-interactive"
+		"update:i": "pnpm update --interactive",
+		"update:l": "pnpm update --latest"
 	},
 	"dependencies": {
 		"@kaname-png/plugin-subcommands-advanced": "^2.1.6",
 		"@sapphire/decorators": "^5.0.0",
 		"@sapphire/discord.js-utilities": "^5.1.2",
 		"@sapphire/framework": "^3.1.4",
+		"@sapphire/pieces": "^3.6.0",
 		"@sapphire/plugin-logger": "^3.0.1",
 		"@sapphire/plugin-subcommands": "^3.2.4",
 		"@sapphire/type": "^2.3.0",
