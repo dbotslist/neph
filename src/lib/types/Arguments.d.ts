@@ -16,8 +16,10 @@ declare module '@sapphire/framework' {
 declare module '@skyra/env-utilities' {
 	interface Env {
 		CLIENT_OWNERS: ArrayString;
-		BOT_REVIEWERS: ArrayString;
 		DISCORD_TOKEN: string;
+
+		API_URL: string;
+		API_KEY: string;
 	}
 }
 
