@@ -25,7 +25,7 @@ export class UserListener extends Listener<typeof Events.GuildMemberUpdate> {
 			}),
 			headers: {
 				'Content-Type': 'application/json',
-				Authorization: envParseString('API_KEY')
+				'x-api-key': envParseString('API_KEY')
 			}
 		}).catch(console.error);
 	}
