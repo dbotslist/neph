@@ -6,7 +6,7 @@
 	"author": "@somelist",
 	"license": "UNLICENSED",
 	"type": "module",
-	"packageManager": "pnpm@7.15.0",
+	"packageManager": "pnpm@7.21.0",
 	"imports": {
 		"#lib/*": "./dist/lib/*.js",
 		"#root/*": "./dist/*.js",
@@ -23,7 +23,7 @@
 		"update:l": "pnpm update --latest"
 	},
 	"dependencies": {
-		"@kaname-png/plugin-subcommands-advanced": "^2.1.6",
+		"@kaname-png/plugin-subcommands-advanced": "^2.1.8",
 		"@sapphire/decorators": "^5.0.0",
 		"@sapphire/discord.js-utilities": "^5.1.2",
 		"@sapphire/framework": "^3.1.4",
@@ -45,11 +45,11 @@
 		"@sapphire/prettier-config": "^1.4.4",
 		"@sapphire/ts-config": "^3.3.4",
 		"@types/eslint": "^8.4.10",
-		"@types/node": "^18.11.17",
+		"@types/node": "^18.11.18",
 		"@types/prettier": "^2.7.2",
-		"@typescript-eslint/eslint-plugin": "^5.47.0",
-		"@typescript-eslint/parser": "^5.47.0",
-		"eslint": "^8.30.0",
+		"@typescript-eslint/eslint-plugin": "^5.47.1",
+		"@typescript-eslint/parser": "^5.47.1",
+		"eslint": "^8.31.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"husky": "^8.0.2",
